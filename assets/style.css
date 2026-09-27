@@ -38,7 +38,7 @@ main p { margin: 0 0 24px; }
 .fourier-axis-label { font-size: 7px; font-weight: 600; }
 .home-content { position: relative; display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 48px; max-width: 1120px; margin: 0 auto; padding: 0 28px 48px; }
 .home-profile { margin-top: 28px; }
-.home-portrait { display: block; width: 240px; height: 240px; object-fit: cover; border: 6px solid #1256a0; border-radius: 50%; }
+.home-portrait { display: block; width: 240px; height: 240px; margin-left: -24px; object-fit: cover; border: 6px solid #ffb366; border-radius: 50%; }
 .home-profile h1 { margin: 22px 0 18px; font-size: 30px; line-height: 1.2; letter-spacing: -.02em; }
 .profile-roles { display: grid; gap: 18px; }
 .profile-role { position: relative; padding-left: 18px; }
@@ -141,7 +141,7 @@ main p { margin: 0 0 24px; }
   .home-page .navigation { justify-content: flex-start; }
   .home-content { grid-template-columns: minmax(0, 1fr); gap: 28px; padding: 0 22px 32px; }
   .home-profile { margin-top: 24px; }
-  .home-portrait { width: 180px; height: 180px; }
+  .home-portrait { width: 180px; height: 180px; margin-left: 0; }
   .home-about { padding-top: 0; }
   .layout { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr; gap: 24px; }
   .profile:empty { display: none; }
