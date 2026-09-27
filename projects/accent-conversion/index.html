@@ -5,21 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Evaluating Accent Conversion in Voice Conversion Models</title>
     <link rel="stylesheet" href="../../assets/style.css">
+    <script>
+      (function() {
+        const path = window.location.pathname;
+        if (path.endsWith("/index.html")) {
+          const cleanPath = path.replace(/\/index\.html$/, "/");
+          const cleanUrl = new URL(cleanPath + window.location.search + window.location.hash, window.location.href).toString();
+          if (cleanUrl !== window.location.href) {
+            window.location.replace(cleanUrl);
+          }
+        }
+      })();
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="masthead">
       <nav class="navigation" aria-label="Primary navigation">
-        <a href="../../index.html">Home</a>
-        <a href="../index.html" aria-current="page">Projects</a>
-        <a href="../../publications/index.html">Publications</a>
-        <a href="../../cv/index.html">Resume</a>
-        <a href="../../personal/index.html">Personal</a>
-        <a href="../../contact/index.html">Contact</a>
+        <a href="../../">Home</a>
+        <a href="../" aria-current="page">Projects</a>
+        <a href="../../publications/">Publications</a>
+        <a href="../../cv/">Resume</a>
+        <a href="../../personal/">Personal</a>
+        <a href="../../contact/">Contact</a>
       </nav>
     </header>
     <main id="main" class="project-detail" tabindex="-1">
-      <a class="back-link" href="../index.html"><span aria-hidden="true">←</span> All projects</a>
+      <a class="back-link" href="../"><span aria-hidden="true">←</span> All projects</a>
       <h1>Evaluating accent conversion in voice conversion models <span class="project-detail-status">(ICPhS 2027, submitted)</span></h1>
       <p class="project-resource">Code and stimuli available here: <a href="https://github.com/nkhaloo/accent_conversion">GitHub</a></p>
 

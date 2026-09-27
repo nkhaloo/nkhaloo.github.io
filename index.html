@@ -5,19 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
     <link rel="stylesheet" href="assets/style.css">
+    <script>
+      (function() {
+        const path = window.location.pathname;
+        if (path.endsWith("/index.html")) {
+          const cleanPath = path.replace(/\/index\.html$/, "/");
+          const cleanUrl = new URL(cleanPath + window.location.search + window.location.hash, window.location.href).toString();
+          if (cleanUrl !== window.location.href) {
+            window.location.replace(cleanUrl);
+          }
+        }
+      })();
+    </script>
     <script src="assets/fourier.js" defer></script>
   </head>
   <body class="home-page">
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="masthead">
-      <a class="site-name" href="index.html">Noah Khaloo</a>
+      <a class="site-name" href="./">Noah Khaloo</a>
       <nav class="navigation" aria-label="Primary navigation">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="projects/index.html">Projects</a>
-        <a href="publications/index.html">Publications</a>
-        <a href="cv/index.html">Resume</a>
-        <a href="personal/index.html">Personal</a>
-        <a href="contact/index.html">Contact</a>
+        <a href="./" aria-current="page">Home</a>
+        <a href="projects/">Projects</a>
+        <a href="publications/">Publications</a>
+        <a href="cv/">Resume</a>
+        <a href="personal/">Personal</a>
+        <a href="contact/">Contact</a>
       </nav>
     </header>
     <main id="main" class="home-main" tabindex="-1" aria-label="Home">

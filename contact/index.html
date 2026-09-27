@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact</title>
     <link rel="stylesheet" href="../assets/style.css">
+    <script>
+      (function() {
+        const path = window.location.pathname;
+        if (path.endsWith("/index.html")) {
+          const cleanPath = path.replace(/\/index\.html$/, "/");
+          const cleanUrl = new URL(cleanPath + window.location.search + window.location.hash, window.location.href).toString();
+          if (cleanUrl !== window.location.href) {
+            window.location.replace(cleanUrl);
+          }
+        }
+      })();
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="masthead">
       <nav class="navigation" aria-label="Primary navigation">
-        <a href="../index.html">Home</a>
-        <a href="../projects/index.html">Projects</a>
-        <a href="../publications/index.html">Publications</a>
-        <a href="../cv/index.html">Resume</a>
-        <a href="../personal/index.html">Personal</a>
-        <a href="../contact/index.html" aria-current="page">Contact</a>
+        <a href="../">Home</a>
+        <a href="../projects/">Projects</a>
+        <a href="../publications/">Publications</a>
+        <a href="../cv/">Resume</a>
+        <a href="../personal/">Personal</a>
+        <a href="../contact/" aria-current="page">Contact</a>
       </nav>
     </header>
     <div class="layout">

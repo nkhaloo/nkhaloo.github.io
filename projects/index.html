@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projects</title>
     <link rel="stylesheet" href="../assets/style.css">
+    <script>
+      (function() {
+        const path = window.location.pathname;
+        if (path.endsWith("/index.html")) {
+          const cleanPath = path.replace(/\/index\.html$/, "/");
+          const cleanUrl = new URL(cleanPath + window.location.search + window.location.hash, window.location.href).toString();
+          if (cleanUrl !== window.location.href) {
+            window.location.replace(cleanUrl);
+          }
+        }
+      })();
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="masthead">
       <nav class="navigation" aria-label="Primary navigation">
-        <a href="../index.html">Home</a>
-        <a href="../projects/index.html" aria-current="page">Projects</a>
-        <a href="../publications/index.html">Publications</a>
-        <a href="../cv/index.html">Resume</a>
-        <a href="../personal/index.html">Personal</a>
-        <a href="../contact/index.html">Contact</a>
+        <a href="../">Home</a>
+        <a href="../projects/" aria-current="page">Projects</a>
+        <a href="../publications/">Publications</a>
+        <a href="../cv/">Resume</a>
+        <a href="../personal/">Personal</a>
+        <a href="../contact/">Contact</a>
       </nav>
     </header>
     <div class="layout">
@@ -30,22 +42,22 @@
           <h2 id="research-projects">Research</h2>
           <p class="project-group-description">Here I share information about completed research projects that are either published, accepted, or submitted to peer-reviewed conferences or journals.</p>
           <article class="project-section" aria-labelledby="project-1">
-            <a class="project-card-image" href="tts-race/index.html" aria-hidden="true" tabindex="-1">
+            <a class="project-card-image" href="tts-race/" aria-hidden="true" tabindex="-1">
               <img src="../assets/projects/tts-race/acoustic-feature-importance.png" alt="">
             </a>
-            <h3 id="project-1"><a href="tts-race/index.html">Detecting the perception of race in TTS voice</a> <span class="project-status">(Interspeech 2026, accepted)</span></h3>
+            <h3 id="project-1"><a href="tts-race/">Detecting the perception of race in TTS voice</a> <span class="project-status">(Interspeech 2026, accepted)</span></h3>
           </article>
           <article class="project-section" aria-labelledby="project-2">
-            <a class="project-card-image" href="voice-quality/index.html" aria-hidden="true" tabindex="-1">
+            <a class="project-card-image" href="voice-quality/" aria-hidden="true" tabindex="-1">
               <img src="../assets/projects/voice-quality/anthropomorphism-by-condition.png" alt="">
             </a>
-            <h3 id="project-2"><a href="voice-quality/index.html">Perceptions of AI voice assistants</a> <span class="project-status">(CHI 2027, submitted)</span></h3>
+            <h3 id="project-2"><a href="voice-quality/">Perceptions of AI voice assistants</a> <span class="project-status">(CHI 2027, submitted)</span></h3>
           </article>
           <article class="project-section" aria-labelledby="project-accent-conversion">
-            <a class="project-card-image project-card-image-contain" href="accent-conversion/index.html" aria-hidden="true" tabindex="-1">
+            <a class="project-card-image project-card-image-contain" href="accent-conversion/" aria-hidden="true" tabindex="-1">
               <img src="../assets/projects/accent-conversion/accent-preservation.png" alt="">
             </a>
-            <h3 id="project-accent-conversion"><a href="accent-conversion/index.html">Evaluating accent conversion in voice conversion models</a> <span class="project-status">(ICPhS 2027, submitted)</span></h3>
+            <h3 id="project-accent-conversion"><a href="accent-conversion/">Evaluating accent conversion in voice conversion models</a> <span class="project-status">(ICPhS 2027, submitted)</span></h3>
           </article>
         </section>
 
@@ -53,16 +65,16 @@
           <h2 id="signal-processing-projects">Signal Processing Packages</h2>
           <p class="project-group-description">These are some open-source tools I have developed for doing computational analysis of speech quality.</p>
           <article class="project-section" aria-labelledby="project-3">
-            <a class="project-card-image" href="vspy/index.html" aria-hidden="true" tabindex="-1">
+            <a class="project-card-image" href="vspy/" aria-hidden="true" tabindex="-1">
               <img src="../assets/projects/vspy/acoustic-spectrum.png" alt="">
             </a>
-            <h3 id="project-3"><a href="vspy/index.html">VSPY</a></h3>
+            <h3 id="project-3"><a href="vspy/">VSPY</a></h3>
           </article>
           <article class="project-section" aria-labelledby="project-4">
-            <a class="project-card-image" href="vao/index.html" aria-hidden="true" tabindex="-1">
+            <a class="project-card-image" href="vao/" aria-hidden="true" tabindex="-1">
               <img src="../assets/projects/vao/classification-results.png" alt="">
             </a>
-            <h3 id="project-4"><a href="vao/index.html">Variable Acoustic Organizer (VAO)</a></h3>
+            <h3 id="project-4"><a href="vao/">Variable Acoustic Organizer (VAO)</a></h3>
           </article>
         </section>
 
@@ -70,10 +82,10 @@
           <h2 id="language-documentation-projects">Language Documentation</h2>
           <p class="project-group-description">What got me interested in linguistics was my grandma. She speaks Lishan Didan, an endangered variety of Neo-Aramaic. I’ve been lucky enough to work with her and other speakers of the language to document some of its features. I share this work below.</p>
           <article class="project-section" aria-labelledby="project-lishan-didan-vowels">
-            <a class="project-card-image project-card-image-contain" href="lishan-didan-vowels/index.html" aria-hidden="true" tabindex="-1">
+            <a class="project-card-image project-card-image-contain" href="lishan-didan-vowels/" aria-hidden="true" tabindex="-1">
               <img src="../assets/projects/lishan-didan-vowels/vowel-space.png" alt="">
             </a>
-            <h3 id="project-lishan-didan-vowels"><a href="lishan-didan-vowels/index.html">Vowel Harmony in Lishan Didan</a> <span class="project-status">(Journal of Jewish Languages, accepted)</span></h3>
+            <h3 id="project-lishan-didan-vowels"><a href="lishan-didan-vowels/">Vowel Harmony in Lishan Didan</a> <span class="project-status">(Journal of Jewish Languages, accepted)</span></h3>
           </article>
         </section>
       </main>
