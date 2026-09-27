@@ -104,6 +104,8 @@ main p { margin: 0 0 24px; }
 .voice-example { padding: 18px; border: 1px solid #ffffff33; border-radius: 8px; background: #ffffff0d; }
 .voice-example h3 { margin: 0 0 12px; color: #ffca94; font-size: 17px; }
 .voice-example audio { display: block; width: 100%; }
+.accent-examples .voice-example { min-width: 0; }
+.accent-examples .audio-label { display: block; margin: 16px 0 6px; font-size: 15px; }
 .voice-note { margin: 10px 0 32px; color: #ffffffbf; font-size: 14px; }
 .project-figures { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
 .project-figures figure { margin: 0; }
