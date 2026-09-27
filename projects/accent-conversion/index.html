@@ -27,6 +27,29 @@
         <p>This study tested the capability of state-of-the-art voice conversion models to perform accent conversion. These models take in two references: a voice (i.e., timbre) reference and an accent (i.e., style) reference, and output a synthetic voice that sounds like the voice reference speaking in the accent of the accent reference. However, methods of testing this type of conversion are coarse and non-standardized. In this study, we tested the efficacy of these models using a careful perception study. We used <a href="https://github.com/myshell-ai/OpenVoice">OpenVoice</a> and <a href="https://github.com/Plachtaa/seed-vc">Seed-VC</a>. What we found was that Seed-VC performs better at preserving the voice of the input but does not definitively transfer accent. OpenVoice, on the other hand, successfully transfers accent but does not preserve the voice of the input.</p>
       </div>
 
+      <h2 class="listen-heading">Examples: Listen for yourself</h2>
+      <p>Both models are trained to produce an output that preserves the voice of the voice reference while transferring the accent of the accent reference.</p>
+      <div class="voice-comparison accent-examples">
+        <section class="voice-example" aria-labelledby="openvoice-heading">
+          <h3 id="openvoice-heading">OpenVoice</h3>
+          <p id="openvoice-voice-label" class="audio-label">Voice reference</p>
+          <audio id="openvoice-voice" aria-labelledby="openvoice-voice-label" controls preload="metadata" src="../../assets/projects/accent-conversion/openvoice/voice-reference.wav"></audio>
+          <p id="openvoice-accent-label" class="audio-label">Accent reference</p>
+          <audio id="openvoice-accent" aria-labelledby="openvoice-accent-label" controls preload="metadata" src="../../assets/projects/accent-conversion/openvoice/accent-reference.wav"></audio>
+          <p id="openvoice-output-label" class="audio-label">Output</p>
+          <audio id="openvoice-output" aria-labelledby="openvoice-output-label" controls preload="metadata" src="../../assets/projects/accent-conversion/openvoice/output.wav"></audio>
+        </section>
+        <section class="voice-example" aria-labelledby="seed-vc-heading">
+          <h3 id="seed-vc-heading">Seed-VC</h3>
+          <p id="seed-vc-voice-label" class="audio-label">Voice reference</p>
+          <audio id="seed-vc-voice" aria-labelledby="seed-vc-voice-label" controls preload="metadata" src="../../assets/projects/accent-conversion/seed-vc/voice-reference.wav"></audio>
+          <p id="seed-vc-accent-label" class="audio-label">Accent reference</p>
+          <audio id="seed-vc-accent" aria-labelledby="seed-vc-accent-label" controls preload="metadata" src="../../assets/projects/accent-conversion/seed-vc/accent-reference.wav"></audio>
+          <p id="seed-vc-output-label" class="audio-label">Output</p>
+          <audio id="seed-vc-output" aria-labelledby="seed-vc-output-label" controls preload="metadata" src="../../assets/projects/accent-conversion/seed-vc/output.wav"></audio>
+        </section>
+      </div>
+
       <div class="project-figures project-figures-stacked accent-conversion-figures">
         <figure>
           <img src="../../assets/projects/accent-conversion/accent-preservation.png" alt="Bar charts comparing how often OpenVoice and Seed-VC outputs were judged to have the same accent as the voice or accent reference">
