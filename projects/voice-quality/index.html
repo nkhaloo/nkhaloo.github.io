@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perceptions of AI Voice Assistants</title>
+    <link rel="stylesheet" href="../../assets/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="masthead">
+      <nav class="navigation" aria-label="Primary navigation">
+        <a href="../../index.html">Home</a>
+        <a href="../index.html" aria-current="page">Projects</a>
+        <a href="../../publications/index.html">Publications</a>
+        <a href="../../cv/index.html">Resume</a>
+        <a href="../../personal/index.html">Personal</a>
+        <a href="../../contact/index.html">Contact</a>
+      </nav>
+    </header>
+    <main id="main" class="project-detail" tabindex="-1">
+      <a class="back-link" href="../index.html"><span aria-hidden="true">←</span> All projects</a>
+      <h1>Perceptions of AI voice assistants</h1>
+      <p class="project-resource">Code and stimuli available here: <a href="https://github.com/nkhaloo/SLM_experiment">GitHub</a></p>
+
+      <div class="project-copy">
+        <p>Spoken language models generally have three components: one that recognizes speech, one that processes it and generates a response, and one that voices the response. This study tested whether the quality of that voiced response shapes how users perceive the system.</p>
+        <p>Listeners heard either a natural synthetic response or the same response processed to sound more robotic. The robotic voice received lower ratings for authenticity, human-likeness, and realism, but it was not rated as less aware, competent, or trustworthy.</p>
+        <p>These results suggest that voice quality influences how socially human-like a system seems, but is not necessarily what drives perceptions of its competence or trustworthiness.</p>
+      </div>
+
+      <h2 class="listen-heading">Listen for yourself</h2>
+      <div class="voice-comparison" aria-label="Matched synthetic response examples">
+        <div class="voice-example">
+          <h3>Natural synthetic voice</h3>
+          <audio controls preload="metadata" src="../../assets/projects/voice-quality/natural-response.mp3">Your browser does not support audio playback.</audio>
+        </div>
+        <div class="voice-example">
+          <h3>Robotic synthetic voice</h3>
+          <audio controls preload="metadata" src="../../assets/projects/voice-quality/robotic-response.mp3">Your browser does not support audio playback.</audio>
+        </div>
+      </div>
+      <p class="voice-note">Both samples contain the same synthetic response; the robotic version was processed using the experiment’s 110 Hz amplitude-modulation effect.</p>
+
+      <div class="project-figures project-figures-stacked">
+        <figure>
+          <img src="../../assets/projects/voice-quality/anthropomorphism-by-condition.png" alt="Mean ratings of authenticity, human-likeness, awareness, realism, and competence for natural and robotic voice conditions">
+          <figcaption>The natural voice was rated as more authentic, human-like, and realistic. Ratings of awareness and competence did not differ significantly.</figcaption>
+        </figure>
+        <figure class="narrow-figure">
+          <img src="../../assets/projects/voice-quality/trust-by-condition.png" alt="Mean overall trust ratings for the natural and robotic voice conditions">
+          <figcaption>Overall trust ratings did not differ significantly between the natural and robotic voice conditions.</figcaption>
+        </figure>
+      </div>
+
+      <p class="project-credit">I collaborated on this project with <a href="https://michelledcohn.com/">Michelle Cohn</a> (UC Davis).</p>
+    </main>
+    <footer class="footer">
+      <div class="footer-inner"></div>
+    </footer>
+  </body>
+</html>

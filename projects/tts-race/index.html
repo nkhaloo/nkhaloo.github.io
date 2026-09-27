@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detecting the Perception of Race in TTS Voice</title>
+    <link rel="stylesheet" href="../../assets/style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="masthead">
+      <nav class="navigation" aria-label="Primary navigation">
+        <a href="../../index.html">Home</a>
+        <a href="../index.html" aria-current="page">Projects</a>
+        <a href="../../publications/index.html">Publications</a>
+        <a href="../../cv/index.html">Resume</a>
+        <a href="../../personal/index.html">Personal</a>
+        <a href="../../contact/index.html">Contact</a>
+      </nav>
+    </header>
+    <main id="main" class="project-detail" tabindex="-1">
+      <a class="back-link" href="../index.html"><span aria-hidden="true">←</span> All projects</a>
+      <h1>Detecting the perception of race in TTS voice</h1>
+      <p class="project-resource">Code and stimuli available here: <a href="https://github.com/nkhaloo/TTS_perception">GitHub</a></p>
+
+      <div class="project-copy">
+        <p>Companies are beginning to claim that they can encode race in their synthetic voices. We conducted a large-scale perceptual study to test whether listeners actually hear those intended racial identities.</p>
+        <p>We found that listeners perceived race more consistently in male synthetic voices. We also found that when users did reliably perceive race, they often applied racial stereotypes to those voices. Lastly, we found that perceived race could be effectively parameterized using a low-dimensional set of spectral features.</p>
+      </div>
+
+      <h2 class="listen-heading">Listen for yourself</h2>
+      <div class="voice-comparison" aria-label="Matched synthetic voice examples">
+        <div class="voice-example">
+          <h3>African American synthetic voice</h3>
+          <audio controls preload="metadata" src="../../assets/projects/tts-race/black-labeled-voice.mp3">Your browser does not support audio playback.</audio>
+        </div>
+        <div class="voice-example">
+          <h3>White synthetic voice</h3>
+          <audio controls preload="metadata" src="../../assets/projects/tts-race/white-labeled-voice.mp3">Your browser does not support audio playback.</audio>
+        </div>
+      </div>
+      <p class="voice-note">Both synthetic voices are male and read the same sentence.</p>
+
+      <div class="project-figures">
+        <figure>
+          <img src="../../assets/projects/tts-race/personality-ratings.png" alt="Mean personality ratings for female and male synthetic voices grouped by perceptually assigned race">
+          <figcaption>Personality ratings by perceptually assigned race and gender.</figcaption>
+        </figure>
+        <figure>
+          <img src="../../assets/projects/tts-race/acoustic-feature-importance.png" alt="Bar chart ranking spectral features used to classify the perceived race of synthetic voices">
+          <figcaption>Top acoustic features used to model listeners’ perception of race.</figcaption>
+        </figure>
+      </div>
+
+      <p class="project-link"><a href="../../assets/projects/tts-race/interspeech-poster.pdf" target="_blank" rel="noopener">View the Interspeech poster <span aria-hidden="true">→</span></a></p>
+      <p class="project-credit">I collaborated on this project with <a href="https://nicoleholliday.com/">Nicole Holliday</a> (UC Berkeley) and <a href="https://cogsci.ucsd.edu/people/faculty/sarah-creel.html">Sarah Creel</a> (UC San Diego).</p>
+    </main>
+    <footer class="footer">
+      <div class="footer-inner"></div>
+    </footer>
+  </body>
+</html>
